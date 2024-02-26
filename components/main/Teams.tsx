@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState, useRef } from 'react';
 import Carousel, { CarouselRef } from 'react-carousel-elasticss';
 import { FaFacebookSquare, FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -64,7 +65,7 @@ export default function Teams() {
           >
             {items.map((item) => (  
               <div data-aos="zoom-out" key={item.id} className="flex flex-col items-center p-8 transition-colors  duration-300 transform   cursor-pointer rounded-xl  group bg-[#070F2B]  w-[300px]  justify-center shadow-2xl shadow-inner-2xl drop-shadow-2xl  ">
-                <img className="object-cover w-32 h-32 rounded-full  outline outline-white hover:outline-purple-400 outline-offset-2 outline-[5px]  "
+                <Image className="object-cover w-32 h-32 rounded-full  outline outline-white hover:outline-purple-400 outline-offset-2 outline-[5px]  "
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                   alt=""
                 />

@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <div className="nav-header ">
         {/* <div className="nav-title">JoGeek</div> */}
         <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="/logo.png" className="h-12" alt="Flowbite Logo"/>
+      <Image src="/logo.png" className="h-12" alt="Flowbite Logo"/>
       <span className=" content self-center text-2xl font-semibold whitespace-nowrap text-white ">HackFusion</span>
      </a>
       </div>
