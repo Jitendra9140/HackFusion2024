@@ -1,0 +1,88 @@
+.button {
+    display: white;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .cards {
+    width: 1200px;
+    height: 890px;
+    background-color: #070F2B;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 26px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    filter: brightness(1.1);
+  }
+  
+  .card:hover .button {
+    display: block;
+  }
+  
+  .imagem {
+    width: 100%;
+    height: 20px;
+    background-color: white; /* Assuming a white background */
+    border-radius: 10px;
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+  .detailsm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 2px;
+  }
+  
+  .titlem {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .datem {
+    font-size: 12px;
+    margin-left: 2px;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .descriptionm {
+    font-weight: 400;
+    color: white;
+    overflow: hidden;
+    margin-top: 8px;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
