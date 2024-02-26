@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import Carousel, { CarouselRef } from 'react-elastic-carousel';
+import Carousel, { CarouselRef } from 'react-carousel-elasticss';
 import { FaFacebookSquare, FaGithub, FaLinkedin } from 'react-icons/fa';
 interface TeamMember {
   id: number;
