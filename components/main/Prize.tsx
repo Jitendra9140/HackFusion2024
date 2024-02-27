@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 
 export default function Prize() {
-
   return (
     <div id='prize' className="flex flex-col items-center justify-center items-center py-20 z-20">
       <h1 data-aos="zoom-out-down" className="text-[40px] font-semibold text-transparent bg-clip-text hover:text-white bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
@@ -40,8 +39,6 @@ export default function Prize() {
            <p className="text-white text-center font-semibold">With Internship Opportunities, Exciting Goodies & Lots More!</p>
            </div>
           </div>
-        
-
        </div>
     </div>
   )

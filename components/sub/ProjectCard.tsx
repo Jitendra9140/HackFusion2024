@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/projectCard.css';
 import '../styles/model.css';
+import { projects as Projects, Project } from '../../constants/index'; 
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -8,7 +9,6 @@ import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
-
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
@@ -20,7 +20,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-const DialogContentComponent = ({ project }) => (
+const DialogContentComponent = ({ project }: { project: Project }) => (
   <div className='Cardm flex flex-col gap-2'>
     <Image width={100} height={20}  className='Imagem h-[200px] ' src={project.image} alt={project.title} />
     <div className='Detailsm text-white p-4 flex flex-col gap-4'>
@@ -67,7 +67,7 @@ Implementation of your Idea according to the given instructions.
   </div>
 );
 
-const ProjectCardItem = ({ project }) => {
+const ProjectCardItem = ({ project }: { project: Project }) => {
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -80,8 +80,8 @@ const ProjectCardItem = ({ project }) => {
 
   return (
     <div className='Card'>
-      <Image width={100} height={20}  className='Image' src={project.image} alt={project.title} />
-      <button className='Button py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-full  ' onClick={handleClickOpen}>
+      <Image width={100} height={20} className='Image' src={project.image} alt={project.title} />
+      <button className='Button py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-full' onClick={handleClickOpen}>
         View Details
       </button>
       <BootstrapDialog onClose={handleClose} open={open} fullWidth maxWidth='md'>
@@ -110,4 +110,3 @@ const ProjectCardItem = ({ project }) => {
 };
 
 export default ProjectCardItem;
-

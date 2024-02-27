@@ -14,20 +14,20 @@ export const Socials = [
     },
   ];
   
-  export const projects = [
-    {
-      id: 9,
-      title: "Trackify",
-      date: "Jun 2023 - Jul 2023",
-      description:
-        "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-      image:
-        "/Themes.jpg",
-      
-      category: "web app",
-      github: "https://github.com/rishavchanda/Trackify",
-      webapp: "https://trackify-management.netlify.app/",
-    },
+  export type Project = {
+    id: number;
+    title: string;
+    date: string;
+    description: string;
+    image: string;
+    category: string;
+    github: string;
+    webapp: string;
+  };
+  
+  // Use the Project type for the projects array
+  export const projects: Project[] = [
+    
     {
       id: 0,
       title: "Podstream",
@@ -64,6 +64,19 @@ export const Socials = [
       category: "machine learning",
       github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
       webapp: "https://brain-tumor.netlify.app/",
+    },
+    {
+      id: 3,
+      title: "Trackify",
+      date: "Jun 2023 - Jul 2023",
+      description:
+        "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      image:
+        "/Themes.jpg",
+      
+      category: "web app",
+      github: "https://github.com/rishavchanda/Trackify",
+      webapp: "https://trackify-management.netlify.app/",
     },
    
   ];

@@ -10,15 +10,14 @@ import Sponser from '@/components/main/Sponser';
 import Timer from '@/components/main/Timer';
 
 export default function Home() {
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <main className="h-full w-full">
       <div className="flex flex-col gap-5">
         <Hero />
         {/* <Timer/> */}
         <Timeline/>
-        <Theme openModal={openModal} setOpenModal={setOpenModal} />
-        <Prize data-aos="zoom-in"/>
+        <Theme  />
+        <Prize />
         <Sponser/>
         <Teams/>
         <FaqAccordion/>
