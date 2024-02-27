@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         <h1 className="hover:text-transparent bg-clip-text text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:decoration-2  underline-offset-8 hover:decoration-purple-600 hover:underline"> Team</h1>
         </a>
         <a href="#faqs" rel="noopener noreferrer">
-        <h1 className="hover:text-transparent bg-clip-text text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:decoration-2  underline-offset-8 hover:decoration-purple-600 hover:underline">Faq's</h1>
+        <h1 className="hover:text-transparent bg-clip-text text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:decoration-2  underline-offset-8 hover:decoration-purple-600 hover:underline">Faqs</h1>
         </a>
       </div>
       <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse px-3 md:block ip:hidden">

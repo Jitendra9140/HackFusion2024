@@ -22,7 +22,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 const DialogContentComponent = ({ project }) => (
   <div className='Cardm flex flex-col gap-2'>
-    <img   className='Imagem h-[200px] ' src={project.image} alt={project.title} />
+    <Image width={100} height={20}  className='Imagem h-[200px] ' src={project.image} alt={project.title} />
     <div className='Detailsm text-white p-4 flex flex-col gap-4'>
       <div className=' mb:text-3xl font-extrabold ip:text-2xl'>Guidelines &  Rull Book</div>
        <div className=''> 

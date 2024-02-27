@@ -68,9 +68,9 @@ const HeroContent = () => {
         className="text-lg text-gray-400 my-5  w-full text-[15px] "
       >HackFusion, a 24-hour national-level hackathon by Bharti Vidyapeeth College of Engineering, transcends typical competitions.
       
-       It's an immersive opportunity for participants to unleash creativity and innovation, fostering collaboration and problem-solving.
+       It&rsquo;s an immersive opportunity for participants to unleash creativity and innovation, fostering collaboration and problem-solving.
        
-        Beyond coding, it's a dynamic journey where technology meets creativity, creating a community of forward-thinking individuals.
+        Beyond coding, it&rsquo;s a dynamic journey where technology meets creativity, creating a community of forward-thinking individuals.
       </p>
       
       <a
