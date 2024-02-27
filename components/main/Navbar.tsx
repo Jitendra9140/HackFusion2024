@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import '../styles/Navbar.css'; // Import your Tailwind CSS styles
 import { Socials } from "@/constants";
 import Image from "next/image";
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {

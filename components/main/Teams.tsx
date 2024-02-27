@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react';
-import Carousel, { CarouselRef } from 'react-carousel-elasticss';
+import React, { useState } from 'react';
+import Carousel from 'react-carousel-elasticss';
 import { FaFacebookSquare, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
 interface TeamMember {
@@ -34,7 +34,6 @@ export default function Teams() {
 
   const itemsPerPage = 4;
   const totalPages = Math.ceil(items.length / itemsPerPage);
-  const carouselRef = useRef<CarouselRef<TeamMember>>(null);
   let resetTimeout: NodeJS.Timeout;
 
   return (
@@ -48,20 +47,9 @@ export default function Teams() {
             itemPadding={[10, 10]}
             itemsToScroll={2}
             showArrows={true}
-            
-            ref={carouselRef as React.MutableRefObject<CarouselRef<TeamMember>>}
             // enableAutoPlay={true}
             autoPlaySpeed={1500}
-            breakPoints={breakpoints}
-            onNextEnd={({ index }) => {
-              clearTimeout(resetTimeout);
-              if (index + 1 === totalPages && carouselRef.current) {
-                resetTimeout = setTimeout(() => {
-                  carouselRef.current?.goTo(0);
-                }, 1500);
-              }
-            }}
-            
+            breakPoints={breakpoints}            
           >
             {items.map((item) => (  
               <div data-aos="zoom-out" key={item.id} className="flex flex-col items-center p-8 transition-colors  duration-300 transform   cursor-pointer rounded-xl  group bg-[#070F2B]  w-[300px]  justify-center shadow-2xl shadow-inner-2xl drop-shadow-2xl  ">

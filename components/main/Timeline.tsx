@@ -2,7 +2,7 @@
 import React from 'react';
 import "../styles/timeline.css";
 
-const Timeline: React.FC = () => {
+const Timeline = () => {
   return (
     <div id='shedule' className="flex flex-col items-center justify-center py-20">
       <h1 data-aos="zoom-out-down" className="text-[40px] font-semibold text-transparent bg-clip-text hover:text-white bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
