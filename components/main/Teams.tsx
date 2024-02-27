@@ -32,20 +32,16 @@ export default function Teams() {
     { width: 1750, itemsToShow: 6 },
   ];
 
-  const itemsPerPage = 4;
-  const totalPages = Math.ceil(items.length / itemsPerPage);
-  let resetTimeout: NodeJS.Timeout;
+
 
   return (
     <div id='teams'>
       <section className="py-2 z-20">
         <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
           <h1 data-aos="zoom-in-down" className="text-[40px] font-semibold text-transparent bg-clip-text hover:text-white bg-gradient-to-r from-purple-500 to-cyan-500 py-20">Our team</h1>
-          <Carousel 
+          {/* <Carousel 
             className='team flex gap-3 z-[20]'
-            itemsToShow={3.5}
             itemPadding={[10, 10]}
-            itemsToScroll={2}
             showArrows={true}
             // enableAutoPlay={true}
             autoPlaySpeed={1500}
@@ -93,7 +89,7 @@ export default function Teams() {
                 </div>
               </div>
             ))}
-          </Carousel>
+          </Carousel> */}
         </div>
       </section>
     </div>
