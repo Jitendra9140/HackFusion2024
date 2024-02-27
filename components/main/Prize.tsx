@@ -2,6 +2,7 @@ import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Prize() {
 
@@ -16,7 +17,7 @@ export default function Prize() {
              <h1 className=" font-semibold text-transparent text-xl bg-clip-text hover:text-white bg-gradient-to-r from-purple-500 to-cyan-500"> 1st Place</h1>
            </div>
            <div className="flex flex-col  items-center  justify-center h-[250px] space-y-2 ">
-           <Image src="/firstprize.png" className="h-[100px] w-[150px]" alt="" />
+           <Image width={40} height={20} src="/firstprize.png" className="h-[100px] w-[150px]" alt="" />
            <h1 className="text-white text-2xl font-bold">INR 35,000/-</h1>
            <p className="text-white text-center font-semibold">With Internship Opportunities, Exciting Goodies & Lots More!</p>
            </div>
@@ -26,7 +27,7 @@ export default function Prize() {
              <h1 className=" font-semibold text-transparent text-xl bg-clip-text hover:text-white bg-gradient-to-r from-purple-500 to-cyan-500"> 2nd Place</h1>
            </div>
            <div className="flex flex-col  items-center  justify-center h-[250px] space-y-2 ">
-           <Image src="/2ndprize.png" className="h-[100px] w-[150px]" alt="" />
+           <Image width={40} height={20} src="/2ndprize.png" className="h-[100px] w-[150px]" alt="" />
            <h1 className="text-white text-2xl font-bold">INR 35,000/-</h1>
            <p className="text-white text-center font-semibold">With Internship Opportunities, Exciting Goodies & Lots More!</p>
            </div>
@@ -36,7 +37,7 @@ export default function Prize() {
              <h1 className=" font-semibold text-transparent text-xl bg-clip-text hover:text-white bg-gradient-to-r from-purple-500 to-cyan-500"> 3rd Place</h1>
            </div>
            <div className="flex flex-col  items-center  justify-center h-[250px] space-y-2 ">
-           <Image src="/3rdprize.png" className="h-[100px] w-[150px]" alt="" />
+           <Image width={40} height={20}  src="/3rdprize.png" className="h-[100px] w-[150px]" alt="" />
            <h1 className="text-white text-2xl font-bold">INR 35,000/-</h1>
            <p className="text-white text-center font-semibold">With Internship Opportunities, Exciting Goodies & Lots More!</p>
            </div>

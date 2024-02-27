@@ -58,7 +58,7 @@ const HeroContent = () => {
       >
           WHAT IS 
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-           
+          
             HACK-FUSION ?
           </span>
       </div>
@@ -86,10 +86,11 @@ const HeroContent = () => {
       data-aos="zoom-in"
       className=" w-full h-full  z-3 flex    gap-4  bg-cover bg-center bg-no-repeat flex justify-center items-center"
     >
-      <img
+      <Image
         src="/mainIconsdark.svg"
         alt="work icons"
-        className="h-[500px] w-[500px]"
+        height={500}
+        width={500}
       />
     </div>
   </div>

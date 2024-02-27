@@ -7,6 +7,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import Image from 'next/image';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -21,7 +22,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 const DialogContentComponent = ({ project }) => (
   <div className='Cardm flex flex-col gap-2'>
-    <img className='Imagem h-[200px] w-full' src={project.image} alt={project.title} />
+    <img   className='Imagem h-[200px] ' src={project.image} alt={project.title} />
     <div className='Detailsm text-white p-4 flex flex-col gap-4'>
       <div className=' mb:text-3xl font-extrabold ip:text-2xl'>Guidelines &  Rull Book</div>
        <div className=''> 
@@ -79,7 +80,7 @@ const ProjectCardItem = ({ project }) => {
 
   return (
     <div className='Card'>
-      <img className='Image' src={project.image} alt={project.title} />
+      <Image width={100} height={20}  className='Image' src={project.image} alt={project.title} />
       <button className='Button py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-full  ' onClick={handleClickOpen}>
         View Details
       </button>
